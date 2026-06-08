@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project | Pilulya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Pilulya</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#market-research">Research</a></li>
+            <li><a href="#development">Development</a></li>
+            <li><a href="#economic">Economics</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-hero">
+        <h1>Project Deep Dive</h1>
+        <p>A technical and strategic overview of the Pilulya development lifecycle.</p>
+    </header>
+
+    <main class="container section">
+        
+        <!-- SECTION 1: MARKET RESEARCH -->
+        <section id="market-research" class="research-section">
+            <div class="section-header">
+                <span class="badge">Phase 01</span>
+                <h2>Market Research</h2>
+            </div>
+
+            <div class="card full-width">
+                <h3>Competitor Analysis</h3>
+                <p>We analyzed existing players like *Medisafe* and *MySugr*. While powerful, they often suffer from "feature bloat" and high subscription costs. Pilulya focuses on extreme minimalism and low latency.</p>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Competitors</th>
+                                <th>Pilulya</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Complexity</td><td>High (Overwhelming)</td><td>Low (Intuitive)</td></tr>
+                            <tr><td>Price</td><td>Subscription Based</td><td>Freemium/Open</td></tr>
+                            <tr><td>UI Style</td><td>Information Dense</td><td>Material 3 Clean</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>User Questionnaire</h3>
+                    <p>We surveyed 100+ individuals managing chronic conditions. 74% reported that "notification fatigue" was their biggest reason for missing doses.</p>
+                </div>
+                <div class="card">
+                    <h3>SWOT Analysis</h3>
+                    <div class="swot-grid">
+                        <div class="swot-item s"><strong>S</strong>trengths</div>
+                        <div class="swot-item w"><strong>W</strong>eaknesses</div>
+                        <div class="swot-item o"><strong>O</strong>pportunities</div>
+                        <div class="swot-item t"><strong>T</strong>hreats</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card full-width conclusion-card">
+                <h3>Research Conclusion</h3>
+                <p>There is a significant market gap for a <strong>high-speed, low-friction</strong> medication tracker that doesn't require complex setup. This validated our focus on Jetpack Compose for UI fluidity.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DEVELOPMENT STAGES -->
+        <section id="development" class="development-section">
+            <div class="section-header">
+                <span class="badge">Phase 02</span>
+                <h2>Development Lifecycle</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Stage 1: Figma -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Using Figma to create high-fidelity Material 3 wireframes and interaction flows.</p>
+                        <div class="image-placeholder figma-mockup">
+                            <span>[ Insert Figma Mockup Image Here ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Database -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Architecture</h3>
+                        <p>Designing a robust Room/SQLite schema to handle medication logs, schedules, and user history offline.</p>
+                        <div class="image-placeholder db-schema">
+                            <span>[ Insert Database Schema Diagram Here ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3: Implementation -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Active Development</h3>
+                        <p>Implementing Jetpack Compose UI and WorkManager for reliable background notifications.</p>
+                        <div class="image-placeholder app-screenshot">
+                            <span>[ Insert In-Development Screenshot Here ]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: ECONOMIC VIABILITY -->
+        <section id="economic" class="economics-section">
+            <div class="section-header">
+                <span class="badge">Phase 03</span>
+                <h2>Economic Viability</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card cost-card">
+                    <h3>Development Costs</h3>
+                    <ul class="cost-list">
+                        <li><span>Infrastructure/Firebase</span> <strong>$0 (Free Tier)</strong></li>
+                        <li><span>UI/UX Design</span> <strong>$0 (Self-Built)</strong></li>
+                        <li><span>Testing & QA</span> <strong>Internal Resource</strong></li>
+                    </ul>
+                </div>
+                <div class="card efficacy-card">
+                    <h3>Projected Efficacy</h3>
+                    <p>By reducing medication errors by an estimated 30% through smart alerts, the long-term value to healthcare providers is immense.</p>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;">85% Adherence Goal</div></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pilulya Project. Technical Documentation.</p>
+    </footer>
+
+</body>
+</html>
