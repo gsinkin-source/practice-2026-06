@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Journal | Pilulya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Pilulya</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="journal.html" class="active">Journal</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-hero">
+        <h1>Development Journal</h1>
+        <p>A chronological log of our engineering journey and breakthroughs.</p>
+    </header>
+
+    <main class="container section">
+        <div class="journal-feed">
+
+            <!-- Post 1 -->
+            <article class="journal-post">
+                <div class="post-date">October 12, 2023</div>
+                <div class="post-content">
+                    <span class="tag tag-design">Design</span>
+                    <h2>Defining the Material 3 Aesthetic</h2>
+                    <p>Our first week was spent deciding on a visual language. We chose the Red-Green palette to balance "Alerting" (Red) with "Health/Success" (Green). The goal: zero friction.</p>
+                    <a href="#" class="btn-text">Read entry →</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="journal-post">
+                <div class="post-date">November 05, 2023</div>
+                <div class="post-content">
+                    <span class="tag tag-tech">Engineering</span>
+                    <h2>The Database Architecture Challenge</h2>
+                    <p>Implementing Room Database required careful planning of our entity relationships. Ensuring that medication logs remain accessible offline was our highest priority this sprint.</p>
+                    <a href="#" class="btn-text">Read entry →</a>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="journal-post">
+                <div class="post-date">December 20, 2023</div>
+                <div class="post-content">
+                    <span class="tag tag-tech">Engineering</span>
+                    <h2>Mastering Jetpack Compose</h2>
+                    <p>Moving from XML to Declarative UI changed everything. We managed to reduce our UI codebase by nearly 40%, making the app significantly lighter and faster.</p>
+                    <a href="#" class="btn-text">Read entry →</a>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="journal-post">
+                <current-date>January 15, 2024</current-date>
+                <div class="post-content">
+                    <span class="tag tag-launch">Deployment</span>
+                    <h2>Testing & QA: The Final Stretch</h2>
+                    <p>The final phase involves stress-testing our WorkManager notifications. We are ensuring that even in battery-saver mode, Pilulya never misses a beat.</p>
+                    <a href="#" class="btn-text">Read entry →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pilulya Project. All development logs are public domain.</p>
+    </footer>
+
+</body>
+</html>
