@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Project | Pilulya</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/site/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Pilulya</a></div>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Пилюля</a></div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#market-research">Research</a></li>
-            <li><a href="#development">Development</a></li>
-            <li><a href="#economic">Economics</a></li>
+            <li><a href="/site/index.html">Домой</a></li>
+            <li><a href="/site/about.html" class="active">О Проекте</a></li>
+            <li><a href="/site/team.html">Команда</a></li>
+            <li><a href="/site/journal.html">Дневник Разработки</a></li>
+            <li><a href="/site/resources.html">Дополнительная Информация</a></li>
         </ul>
     </nav>
 
-    <header class="about-hero">
-        <h1>Project Deep Dive</h1>
-        <p>A technical and strategic overview of the Pilulya development lifecycle.</p>
+    <header class="hero">
+        <h1>О Проекте <span class="text-red">Пилюля</span></h1>
+        <p>Взгляд на разработку приложения <span class="text-red">Пилюля</span> с технической и финансовой точек зрения.</p>
     </header>
 
     <main class="container section">
-        
-        <!-- SECTION 1: MARKET RESEARCH -->
+
         <section id="market-research" class="research-section">
             <div class="section-header">
-                <span class="badge">Phase 01</span>
-                <h2>Market Research</h2>
+                <span class="badge">Первая стадия</span>
+                <h2>Анализ рынка и целевой аудитории</h2>
             </div>
 
             <div class="card full-width">
-                <h3>Competitor Analysis</h3>
-                <p>We analyzed existing players like *Medisafe* and *MySugr*. While powerful, they often suffer from "feature bloat" and high subscription costs. Pilulya focuses on extreme minimalism and low latency.</p>
+                <h3>Анализ конкурентов</h3>
+                <p>Были изучены четыре международных приложения (MyTherapy, Medisafe, Mango Health, MedMinder) и два российских («Аптека.ру», «СберЕАптека»).</p>
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Feature</th>
-                                <th>Competitors</th>
-                                <th>Pilulya</th>
+                                <th>Точки фокуса</th>
+                                <th>Конкуренты</th>
+                                <th>Пилюля</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Complexity</td><td>High (Overwhelming)</td><td>Low (Intuitive)</td></tr>
-                            <tr><td>Price</td><td>Subscription Based</td><td>Freemium/Open</td></tr>
-                            <tr><td>UI Style</td><td>Information Dense</td><td>Material 3 Clean</td></tr>
+                            <tr><td>Сложность интерфейса</td><td>Высокая (перегружен)</td><td>Низкая (интуитивный)</td></tr>
+                            <tr><td>Стоимость</td><td>Freemium/Premium</td><td>Freemium/Premium</td></tr>
+                            <tr><td>Стиль UI/UX</td><td>Разобщённый</td><td>Согласующийся, в стиле Material 3</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -56,89 +56,89 @@
 
             <div class="grid-2">
                 <div class="card">
-                    <h3>User Questionnaire</h3>
-                    <p>We surveyed 100+ individuals managing chronic conditions. 74% reported that "notification fatigue" was their biggest reason for missing doses.</p>
+                    <h3>Анкетирование</h3>
+                    <p>Мы провели оффлайн-анкетирование силами наших корреспондентов, опрошено 42 респондента в возрасте 35–70 лет, включая 18 респондентов старше 50 лет. Ключевые результаты: 71 % респондентов забывают принять лекарство хотя бы один раз в неделю; 86 % хотели бы получать напоминания на смартфоне; 67 % не готовы платить за подобное приложение даже разовый платеж; 83 % отрицательно относятся к идее хранения медицинских данных в облаке без локального резервного экземпляра </p>
                 </div>
                 <div class="card">
-                    <h3>SWOT Analysis</h3>
+                    <h3>SWOT Анализ</h3>
                     <div class="swot-grid">
-                        <div class="swot-item s"><strong>S</strong>trengths</div>
-                        <div class="swot-item w"><strong>W</strong>eaknesses</div>
-                        <div class="swot-item o"><strong>O</strong>pportunities</div>
-                        <div class="swot-item t"><strong>T</strong>hreats</div>
+                        <div class="swot-item s"><strong>S:</strong> Бесплатность, локальное хранение, нативный интерфейс, поддержка широкого диапазона версий Android</div>
+                        <div class="swot-item w"><strong>W:</strong> Отсутствие версии для iOS, отсутствие облачной синхронизации (как обратная сторона приватности), отсутствие интеграции с медицинскими сервисами на этапе MVP</div>
+                        <div class="swot-item o"><strong>O:</strong> Интеграция с Google Health Connect, партнерство с аптечными сетями и клиниками («Ютека»), ЕМИАС, экспорт отчетов для лечащего врача</div>
+                        <div class="swot-item t"><strong>T:</strong> Высокая конкуренция со стороны международных продуктов, риск ужесточения регулирования mHealth-сектора в РФ, агрессивные оптимизаторы батареи на OEM-прошивках.</div>
                     </div>
                 </div>
             </div>
 
             <div class="card full-width conclusion-card">
-                <h3>Research Conclusion</h3>
-                <p>There is a significant market gap for a <strong>high-speed, low-friction</strong> medication tracker that doesn't require complex setup. This validated our focus on Jetpack Compose for UI fluidity.</p>
+                <h3>Оценка результатов исследования</h3>
+                <p>Существует устойчивый спрос на бесплатный, приватный и простой трекер приёма лекарств в сегменте пациентов старшего возраста с опциональной подписочной моделью и точными напоминаниями.</p>
             </div>
         </section>
 
-        <!-- SECTION 2: DEVELOPMENT STAGES -->
         <section id="development" class="development-section">
             <div class="section-header">
-                <span class="badge">Phase 02</span>
-                <h2>Development Lifecycle</h2>
+                <span class="badge">Вторая стадия</span>
+                <h2>Жизненный цикл разработки</h2>
             </div>
 
             <div class="timeline">
-                <!-- Stage 1: Figma -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Design & Prototyping</h3>
-                        <p>Using Figma to create high-fidelity Material 3 wireframes and interaction flows.</p>
+                        <h3>Создания прототипа дизайна</h3>
+                        <p>Разработка макетов экранов в Figma.</p>
                         <div class="image-placeholder figma-mockup">
-                            <span>[ Insert Figma Mockup Image Here ]</span>
+                            <span><img src="/site/images/figma1.jpg" alt="figma"; loading="lazy"></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stage 2: Database -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Data Architecture</h3>
-                        <p>Designing a robust Room/SQLite schema to handle medication logs, schedules, and user history offline.</p>
+                        <h3>Схема базы данных</h3>
+                        <p>Спроектирована схема базы данных из трех связанных таблиц (medications, schedule_entries, intake_log), выбрана архитектура single-activity.</p>
                         <div class="image-placeholder db-schema">
-                            <span>[ Insert Database Schema Diagram Here ]</span>
+                            <span><img src="/site/images/db1.jpg" alt="database-schema"; loading="lazy"></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stage 3: Implementation -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Active Development</h3>
+                        <h3>Процесс разработки</h3>
                         <p>Implementing Jetpack Compose UI and WorkManager for reliable background notifications.</p>
                         <div class="image-placeholder app-screenshot">
-                            <span>[ Insert In-Development Screenshot Here ]</span>
+                            <span><img src="/site/images/screenshots1.jpg" alt="screenshots"; loading="lazy"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: ECONOMIC VIABILITY -->
         <section id="economic" class="economics-section">
             <div class="section-header">
-                <span class="badge">Phase 03</span>
-                <h2>Economic Viability</h2>
+                <span class="badge">Третья стадия</span>
+                <h2>Оценка экономической эффективности проекта</h2>
             </div>
 
             <div class="grid-2">
                 <div class="card cost-card">
-                    <h3>Development Costs</h3>
+                    <h3>Затраты на разработку</h3>
                     <ul class="cost-list">
-                        <li><span>Infrastructure/Firebase</span> <strong>$0 (Free Tier)</strong></li>
-                        <li><span>UI/UX Design</span> <strong>$0 (Self-Built)</strong></li>
-                        <li><span>Testing & QA</span> <strong>Internal Resource</strong></li>
+                        <li><span>Разработка (Android, Kotlin)</span> <strong>480 000 ₽</strong></li>
+                        <li><span>UI/UX Дизайн</span> <strong>96 000 ₽</strong></li>
+                        <li><span>Тестирование (QA)</span> <strong>60 000 ₽</strong></li>
+                        <li><span>Лицензия Google Play Developer</span> <strong>2 500 ₽</strong></li>
+                        <li><span>Юридическая консультация</span> <strong>15 000 ₽</strong></li>
+                        <li><span>Резерв непредвиденных расходов 15%</span> <strong>89 925 ₽</strong></li>
+                        <li><span>Стартовое продвижение</span> <strong>180 000 ₽</strong></li>
+                        <li><span><strong>Итого:</strong></span> <strong>923 425 ₽</strong></li>
                     </ul>
                 </div>
                 <div class="card efficacy-card">
-                    <h3>Projected Efficacy</h3>
-                    <p>By reducing medication errors by an estimated 30% through smart alerts, the long-term value to healthcare providers is immense.</p>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;">85% Adherence Goal</div></div>
+                    <h3>Прогноз экономической эффективности приложения</h3>
+                    <p>При конверсии 5% в платную подписку годовой доход составляет порядка 5,94 млн ₽, что дает срок окупаемости проекта в пределах 10–14 месяцев. </p>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;">85% Цель роста количества подписок к/к</div></div>
                 </div>
             </div>
         </section>
@@ -146,7 +146,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Pilulya Project. Technical Documentation.</p>
+        <p>&copy; 2026 Проект Пилюля. Сделано с ❤️ для Вашего здоровья.</p>
     </footer>
 
 </body>
