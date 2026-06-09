@@ -4,7 +4,7 @@
     --md-sys-color-on-primary: #ffffff;
     --md-sys-color-secondary: #2e7d32; 
     --md-sys-color-on-secondary: #ffffff;
-    --md-sys-color-surface: #cae0c324;
+    --md-sys-color-surface: #fffbff;
     --md-sys-color-surface-variant: #e7e0ec;
     --md-sys-color-on-surface: #1c1b1f;
     --md-sys-color-outline: #79747e;
@@ -82,14 +82,15 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 
 .hero {
-    padding: 100px 5% 60px;
+    padding: 60px 5% 60px;
     text-align: center;
     background: linear-gradient(180deg, #fff 0%, #fdf2f2 100%);
+
 }
 
 .hero p {
     font-size: 1.2rem;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 2rem;
     color: var(--md-sys-color-outline);
 }
@@ -99,7 +100,7 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
     background-color: var(--md-sys-color-primary);
     color: white;
     padding: 14px 32px;
-    border-radius: 50px; /* M3 Rounded Pill Shape */
+    border-radius: 50px; 
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
@@ -126,7 +127,7 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 .badge {
     display: inline-block;
-    padding: 4px 16px;
+    padding: 4px 30px;
     border-radius: 20px;
     background-color: var(--md-sys-color-surface-variant);
     color: var(--md-sys-color-primary);
@@ -199,7 +200,7 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 .mockup-img {
     
-    width: 230px;
+    width: 235px;
     aspect-ratio: 9/18;
     border-radius: 32px;
     display: flex;
@@ -227,6 +228,19 @@ footer {
 }
 
 
+
+.about-hero {
+    padding: 80px 5%;
+    text-align: center;
+    background: var(--md-sys-color-surface-variant);
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -236,9 +250,35 @@ footer {
 
 .full-width {
     grid-column: 1 / -1;
-    margin-bottom: 2rem;
 }
 
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonial {
+    background: #f9f9f9;
+    border-left: 4px solid #6bbb6fbe;;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 32px;
+    color: 6bbb6fbe;;
+    font-family: serif;
+    line-height: 1;
+    margin-bottom: -16px;
+}
+
+.testimonial p {
+    margin: 8px 0 0 0;
+    font-style: italic;
+    color: #333;
+}
 .comparison-table {
     overflow-x: auto;
     margin-top: 20px;
@@ -261,6 +301,7 @@ th {
     color: var(--md-sys-color-primary);
 }
 
+/* SWOT Analysis */
 .swot-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -273,16 +314,24 @@ th {
     border-radius: 12px;
     font-size: 0.9rem;
 }
-.s { background: #e8f5e9; color: #2e7d32; } /* Green */
-.w { background: #ffebee; color: #c62828; } /* Red */
-.o { background: #e3f2fd; color: #1565c0; } /* Blue */
-.t { background: #fff3e0; color: #ef6c00; } /* Orange */
+.s { background: #e8f5e9; color: #2e7d32; } 
+.w { background: #ffebee; color: #c62828; } 
+.o { background: #e3f2fd; color: #1565c0; } 
+.t { background: #fff3e0; color: #ef6c00; } 
+.swot-item ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+    list-style-type: disc; 
+}
+
+.swot-item li {
+    margin-bottom: 4px;
+}
 
 
 .timeline {
     position: relative;
     padding: 20px 0;
-    margin-bottom: 3rem;
 }
 
 .timeline::before {
@@ -312,10 +361,9 @@ th {
     border: 4px solid white;
 }
 
-
-.image-placeholder {
-    width: 92%;
-    height: 400px;
+.image-placeholder figma-mockup {
+    width: 100%;
+    height: 240px;
     background: #f0f0f0;
     border: 2px dashed var(--md-sys-color-outline);
     border-radius: 20px;
@@ -326,8 +374,32 @@ th {
     color: var(--md-sys-color-outline);
     font-weight: 500;
 }
-
-/* Economic Section */
+.image-placeholder db-schema {
+    width: 100%;
+    height: 240px;
+    background: #f0f0f0;
+    border: 2px dashed var(--md-sys-color-outline);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--md-sys-color-outline);
+    font-weight: 500;
+}
+.image-placeholder app-screenshot {
+    width: 100%;
+    height: 240px;
+    background: #f0f0f0;
+    border: 2px dashed var(--md-sys-color-outline);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--md-sys-color-outline);
+    font-weight: 500;
+}
 .cost-list {
     list-style: none;
 }
@@ -358,12 +430,10 @@ th {
     font-weight: bold;
 }
 
-/* Responsive Fixes */
+
 @media (max-width: 600px) {
     .grid-2 { grid-template-columns: 1fr; }
 }
-
-/* --- Team Page Specific Styles --- */
 
 .team-grid {
     display: grid;
@@ -374,7 +444,7 @@ th {
 
 .team-card {
     background: white;
-    border-radius: 32px; /* M3 Large Radius */
+    border-radius: 32px;
     padding: 40px 20px;
     text-align: center;
     border: 1px solid var(--md-sys-color-surface-variant);
@@ -408,10 +478,10 @@ th {
     font-size: 0.95rem;
     color: var(--md-sys-color-outline);
     margin-bottom: 20px;
-    min-height: 45px; /* Keeps cards aligned */
+    min-height: 45px;
 }
 
-/* Role Badges */
+
 .role-badge {
     display: inline-block;
     padding: 6px 16px;
@@ -423,7 +493,6 @@ th {
     margin-bottom: 15px;
 }
 
-/* Role Specific Colors */
 .role-lead { background: #ffebee; color: var(--md-sys-color-primary); }
 .role-tech { background: #e8f5e9; color: var(--md-sys-color-secondary); }
 .role-design { background: #f3e5f5; color: #7b1fa2; }
@@ -443,13 +512,11 @@ th {
     border-bottom: 2px solid var(--md-sys-color-primary);
 }
 
-/* --- Journal Page Specific Styles --- */
-
 .journal-feed {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    max-width: 800px; /* Keeps the reading line comfortable for eyes */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -489,7 +556,6 @@ th {
     margin-bottom: 20px;
 }
 
-/* Tags/Badges for Posts */
 .tag {
     display: inline-block;
     padding: 4px 12px;
@@ -504,7 +570,7 @@ th {
 .tag-tech { background: #e8f5e9; color: #2e7d32; }
 .tag-launch { background: #ffebee; color: #c62828; }
 
-/* Text Button Style */
+
 .btn-text {
     text-decoration: none;
     color: var(--md-sys-color-primary);
@@ -516,19 +582,15 @@ th {
     text-decoration: underline;
 }
 
-/* Active Link in Nav */
+
 .nav-links a.active {
     color: var(--md-sys-color-primary);
     border-bottom: 2px solid var(--md-sys-color-primary);
 }
 
-/* --- Resources Page Specific Styles --- */
-
-/* Diagram Placeholder Styling */
-/* Diagram Placeholder Styling */
 .diagram-placeholder {
     width: 100%;
-    aspect-ratio: 16/9; /* Maintains a cinematic widescreen shape */
+    aspect-ratio: 16/9; 
     background: var(--md-sys-color-surface-variant);
     border: 2px dashed var(--md-sys-color-outline);
     border-radius: 24px;
@@ -542,30 +604,67 @@ th {
 }
 
 .icon-box {
-    font-size: 3rem; /* Large emoji/icon size */
+    font-size: 3rem; 
     margin-bottom: 10px;
 }
 
 
+/* Общие стили для блока */
 .stats-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
     margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid var(--md-sys-color-surface-variant);
 }
 
 .stat-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
     text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/* Общие стили для всех процентов */
 .stat-item strong {
-    font-size: 1.5rem;
-    color: var(--md-sys-color-primary);
+    display: block;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+.stat-item:first-child strong {
+    color: #3498db;  
+}
+.stat-item:nth-child(2) strong {
+    color: #e67e22; 
+}
+.stat-item:nth-child(3) strong {
+    color: #2ecc71; 
+}
+.stat-item:last-child strong {
+    color: #9b59b6;  
 }
 
-/* Resource Link List */
+
+
+/* Для адаптива на мобильных */
+@media (max-width: 768px) {
+    .stat-item strong {
+        font-size: 36px;
+    }
+    .stat-item {
+        min-width: 100%;
+    }
+}
+
 .resource-links-section {
     margin-top: 60px;
 }
@@ -590,7 +689,7 @@ th {
 .resource-link:hover {
     border-color: var(--md-sys-color-secondary);
     transform: translateX(10px);
-    background-color: #f9fff9; /* Very subtle green tint */
+    background-color: #f9fff9; 
 }
 
 .link-icon {
@@ -631,7 +730,7 @@ th {
         align-items: flex-start;
     }
     .arrow {
-        display: none; /* Hide arrow on mobile to save space */
+        display: none; 
     }
     .link-icon {
         margin-bottom: 15px;

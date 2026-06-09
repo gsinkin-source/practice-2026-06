@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Project | Pilulya</title>
-    <link rel="stylesheet" href="/site/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,43 +12,44 @@
     <nav class="navbar">
         <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Пилюля</a></div>
         <ul class="nav-links">
-            <li><a href="/site/index.html">Домой</a></li>
-            <li><a href="/site/about.html" class="active">О Проекте</a></li>
-            <li><a href="/site/team.html">Команда</a></li>
-            <li><a href="/site/journal.html">Дневник Разработки</a></li>
-            <li><a href="/site/resources.html">Дополнительная Информация</a></li>
+            <li><a href="/index.html">Домой</a></li>
+            <li><a href="/about.html" class="active">О Проекте</a></li>
+            <li><a href="/team.html">Команда</a></li>
+            <li><a href="/journal.html">Дневник Разработки</a></li>
+            <li><a href="/resources.html">Дополнительная Информация</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <h1>О Проекте <span class="text-red">Пилюля</span></h1>
-        <p>Взгляд на разработку приложения <span class="text-red">Пилюля</span> с технической и финансовой точек зрения.</p>
+    <header class="about-hero">
+        <h1>Погрузимся в проект </h1>
+        <p>Технический и стратегический обзор жизненного цикла разработки проекта Пилюля.</p>
     </header>
 
     <main class="container section">
-
+        
+        <!-- РАЗДЕЛ 1: ИССЛЕДОВАНИЕ РЫНКА -->
         <section id="market-research" class="research-section">
             <div class="section-header">
-                <span class="badge">Первая стадия</span>
-                <h2>Анализ рынка и целевой аудитории</h2>
+                <span class="badge">Первый этап</span>
+                <h2>Исследование рынка</h2>
             </div>
 
             <div class="card full-width">
                 <h3>Анализ конкурентов</h3>
-                <p>Были изучены четыре международных приложения (MyTherapy, Medisafe, Mango Health, MedMinder) и два российских («Аптека.ру», «СберЕАптека»).</p>
+                <p>Мы проанализировали существующих игроков, таких как *Medisafe* и *MySugr*. Несмотря на свою мощь, они часто страдают от «избытка функций» и высоких абонентских платежей. Pilulya же фокусируется на предельном минимализме.</p>
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Точки фокуса</th>
+                                <th>Особенности</th>
                                 <th>Конкуренты</th>
                                 <th>Пилюля</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Сложность интерфейса</td><td>Высокая (перегружен)</td><td>Низкая (интуитивный)</td></tr>
-                            <tr><td>Стоимость</td><td>Freemium/Premium</td><td>Freemium/Premium</td></tr>
-                            <tr><td>Стиль UI/UX</td><td>Разобщённый</td><td>Согласующийся, в стиле Material 3</td></tr>
+                            <tr><td>Сложность</td><td>Высокая(неинтуитивная)</td><td>Низкая (интуитивная)</td></tr>
+                            <tr><td>Цена</td><td>На основе подписки</td><td>Фримиум</td></tr>
+                            <tr><td>UI Style</td><td>Перегруженный дизайн</td><td>Минимальный дизайн</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -56,69 +57,117 @@
 
             <div class="grid-2">
                 <div class="card">
-                    <h3>Анкетирование</h3>
-                    <p>Мы провели оффлайн-анкетирование силами наших корреспондентов, опрошено 42 респондента в возрасте 35–70 лет, включая 18 респондентов старше 50 лет. Ключевые результаты: 71 % респондентов забывают принять лекарство хотя бы один раз в неделю; 86 % хотели бы получать напоминания на смартфоне; 67 % не готовы платить за подобное приложение даже разовый платеж; 83 % отрицательно относятся к идее хранения медицинских данных в облаке без локального резервного экземпляра </p>
+                    <h3>Анкета пользователя</h3>
+                    <p>Проведено онлайн-анкетирование с помощью Яндекс.Форм, опрошено 60 респондентов в возрасте 35–70 лет, выяснилось, что основной причиной пропуска приема лекарств для них является «усталость от уведомлений».</p>
+                    
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <div class="quote-icon">“</div>
+                            <p>«Я просто устала от этих писков каждые 3 часа, проще было не пить таблетки».</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote-icon">“</div>
+                            <p>«Эти уведомления стали для меня пыткой. Я устала постоянно проверять, что там пришло — лекарство или сообщение от друга. В итоге проще было забыть про приём».</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote-icon">“</div>
+                            <p>«Система уведомлений не учитывает ритм жизни. Если ты занят, 5 пропущенных напоминаний подряд вызывают стресс, а не помогают».</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>SWOT Анализ</h3>
+                    <h3>SWOT-анализ</h3>
                     <div class="swot-grid">
-                        <div class="swot-item s"><strong>S:</strong> Бесплатность, локальное хранение, нативный интерфейс, поддержка широкого диапазона версий Android</div>
-                        <div class="swot-item w"><strong>W:</strong> Отсутствие версии для iOS, отсутствие облачной синхронизации (как обратная сторона приватности), отсутствие интеграции с медицинскими сервисами на этапе MVP</div>
-                        <div class="swot-item o"><strong>O:</strong> Интеграция с Google Health Connect, партнерство с аптечными сетями и клиниками («Ютека»), ЕМИАС, экспорт отчетов для лечащего врача</div>
-                        <div class="swot-item t"><strong>T:</strong> Высокая конкуренция со стороны международных продуктов, риск ужесточения регулирования mHealth-сектора в РФ, агрессивные оптимизаторы батареи на OEM-прошивках.</div>
+                        <div class="swot-item s">
+                            <strong>S - cильные стороны</strong>
+                            <ul>
+                                <li>локальное хранение без сервера</li>
+                                <li>учёт остатка и истории</li>
+                                <li>широкая поддержка версии Android</li>
+                            </ul>
+                        </div>
+                        <div class="swot-item w">
+                            <strong>W - слабые стороны</strong>
+                            <ul>
+                                <li>нет облачной синхронизации</li>
+                                <li>отсутствие версии на iOS</li>
+                                <li>нет интеграции с мед. сервисами на этапе MVP</li>
+                            </ul>
+                        </div>
+                        <div class="swot-item o">
+                            <strong>O - возможности</strong>
+                            <ul>
+                                <li>экспорт PDF для врача</li>
+                                <li>партнерство с аптечными сетями и клиниками, в том числе ЕМИАС</li>
+                                <li>интеграция с нативным приложением «Здоровье»</li>
+                            </ul>
+                        </div>
+                        <div class="swot-item t">
+                            <strong>T - угрозы</strong>
+                            <ul>
+                                <li>ограничения точных будильников</li>
+                                <li>ошибки пользователя в расписании</li>
+                                <li>конкуренция с международными продуктами</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card full-width conclusion-card">
-                <h3>Оценка результатов исследования</h3>
-                <p>Существует устойчивый спрос на бесплатный, приватный и простой трекер приёма лекарств в сегменте пациентов старшего возраста с опциональной подписочной моделью и точными напоминаниями.</p>
+                <h3>Заключение исследования</h3>
+                <p>На рынке существует значительный пробел в сегменте простых в использовании систем отслеживания приема лекарств, не требующих сложной настройки. Это подтвердило правильность нашего выбора Jetpack Compose для обеспечения гибкости пользовательского интерфейса.</p>
             </div>
         </section>
 
+        <!-- РАЗДЕЛ 2: ЭТАПЫ РАЗРАБОТКИ -->
         <section id="development" class="development-section">
             <div class="section-header">
-                <span class="badge">Вторая стадия</span>
+                <span class="badge">Этап 02</span>
                 <h2>Жизненный цикл разработки</h2>
             </div>
 
             <div class="timeline">
+                <!-- Этап 1: Figma -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Создания прототипа дизайна</h3>
-                        <p>Разработка макетов экранов в Figma.</p>
-                        <div class="image-placeholder figma-mockup">
-                            <span><img src="/site/images/figma1.jpg" alt="figma"; loading="lazy"></span>
+                        <h3>Проектирование</h3>
+                        <p>Использование Figma для создания высококачественных прототипов интерфейса и схемы взаимодействия в стиле Material 3.</p>
+                        <div class="image-placeholder figma-mockup"><img src="img/figma.png" alt="figma"><div>
+                            
                         </div>
                     </div>
                 </div>
 
+                <!-- Этап 2: База данных -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Схема базы данных</h3>
-                        <p>Спроектирована схема базы данных из трех связанных таблиц (medications, schedule_entries, intake_log), выбрана архитектура single-activity.</p>
-                        <div class="image-placeholder db-schema">
-                            <span><img src="/site/images/db1.jpg" alt="database-schema"; loading="lazy"></span>
+                        <h3>Архитектура данных</h3>
+                        <p>Разработка надежной схемы Room/SQLite для обработки журналов приема лекарств, расписаний и истории действий пользователей в автономном режиме.</p>
+                        <div class="image-placeholder db-schema"><img src="img/db.png" alt="figma"><div></div>
+                            
                         </div>
                     </div>
                 </div>
 
+                <!-- Этап 3: Внедрение -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Процесс разработки</h3>
-                        <p>Implementing Jetpack Compose UI and WorkManager for reliable background notifications.</p>
-                        <div class="image-placeholder app-screenshot">
-                            <span><img src="/site/images/screenshots1.jpg" alt="screenshots"; loading="lazy"></span>
+                        <h3>Активное развитие</h3>
+                        <p>Внедрение пользовательского интерфейса Jetpack Compose и WorkManager для обеспечения надежных фоновых уведомлений.</p>
+                        <div class="image-placeholder app-screenshot"><img src="img/screenshots1.png" alt="figma"><div></div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- РАЗДЕЛ 3: ЭКОНОМИЧЕСКАЯ ЖИЗНЕСПОСОБНОСТЬ -->
         <section id="economic" class="economics-section">
             <div class="section-header">
-                <span class="badge">Третья стадия</span>
-                <h2>Оценка экономической эффективности проекта</h2>
+                <span class="badge">Этап 03</span>
+                <h2>Экономическая часть</h2>
             </div>
 
             <div class="grid-2">
@@ -126,19 +175,34 @@
                     <h3>Затраты на разработку</h3>
                     <ul class="cost-list">
                         <li><span>Разработка (Android, Kotlin)</span> <strong>480 000 ₽</strong></li>
-                        <li><span>UI/UX Дизайн</span> <strong>96 000 ₽</strong></li>
+                        <li><span>UX/UI-дизайн (Material 3)</span> <strong>96 000 ₽</strong></li>
                         <li><span>Тестирование (QA)</span> <strong>60 000 ₽</strong></li>
                         <li><span>Лицензия Google Play Developer</span> <strong>2 500 ₽</strong></li>
-                        <li><span>Юридическая консультация</span> <strong>15 000 ₽</strong></li>
-                        <li><span>Резерв непредвиденных расходов 15%</span> <strong>89 925 ₽</strong></li>
-                        <li><span>Стартовое продвижение</span> <strong>180 000 ₽</strong></li>
-                        <li><span><strong>Итого:</strong></span> <strong>923 425 ₽</strong></li>
+                        <li><span>Хостинг сайта проекта</span> <strong>6 000 ₽</strong></li>
+                        <li><span>Юридическая консультация (Privacy Policy)</span> <strong>15 000 ₽</strong></li>
+                        <li><span>Резерв непредвиденных расходов 15 %</span> <strong>89 925 ₽</strong></li>
+                        <li><span>ИТОГО:</span> <strong>749 425 ₽</strong></li>
                     </ul>
                 </div>
                 <div class="card efficacy-card">
-                    <h3>Прогноз экономической эффективности приложения</h3>
-                    <p>При конверсии 5% в платную подписку годовой доход составляет порядка 5,94 млн ₽, что дает срок окупаемости проекта в пределах 10–14 месяцев. </p>
+                    <h3>Эффективность</h3>
+                    
+                    <!-- 1. Социальная эффективность -->
+                    <p><strong>1. Социальная эффективность</strong></p>
+                    <ul>
+                        <li>Охват целевой аудитории: 1 000 пациентов.</li>
+                        <li>Снижение риска осложнений и повторных госпитализаций.</li>
+                    </ul>
+                
+                    <!-- 2. Экономическая эффективность -->
+                    <p><strong>2. Экономическая эффективность</strong></p>
+                    <ul>
+                        <li>Окупаемость через freemium-модель: базовый функционал бесплатно, PRO-подписка 99 ₽ в месяц.</li>
+                        <li>Годовой доход при конверсии 5%: около 5,94 млн ₽, окупаемость: 10–14 месяцев.</li>
+                        <li>Экономия для системы здравоохранения: 200 000 ₽ в год на 1 000 пациентов.</li>
+                    </ul>
                     <div class="progress-bar"><div class="progress-fill" style="width: 85%;">85% Цель роста количества подписок к/к</div></div>
+                </div>
                 </div>
             </div>
         </section>
