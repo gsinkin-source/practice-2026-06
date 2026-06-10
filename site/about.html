@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Project | Pilulya</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/site/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,17 +12,17 @@
     <nav class="navbar">
         <div class="logo"><a href="index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Пилюля</a></div>
         <ul class="nav-links">
-            <li><a href="/index.html">Домой</a></li>
-            <li><a href="/about.html" class="active">О Проекте</a></li>
-            <li><a href="/team.html">Команда</a></li>
-            <li><a href="/journal.html">Дневник Разработки</a></li>
-            <li><a href="/resources.html">Дополнительная Информация</a></li>
+            <li><a href="/site/index.html">Домой</a></li>
+            <li><a href="/site/about.html" class="active">О Проекте</a></li>
+            <li><a href="/site/team.html">Команда</a></li>
+            <li><a href="/site/journal.html">Дневник Разработки</a></li>
+            <li><a href="/site/resources.html">Дополнительная Информация</a></li>
         </ul>
     </nav>
 
-    <header class="about-hero">
+    <header class="hero">
         <h1>Погрузимся в проект </h1>
-        <p>Технический и стратегический обзор жизненного цикла разработки проекта Пилюля.</p>
+        <p>Технический и стратегический обзор жизненного цикла разработки проекта <span class="text-red">Пилюля</span>.</p>
     </header>
 
     <main class="container section">
@@ -36,7 +36,7 @@
 
             <div class="card full-width">
                 <h3>Анализ конкурентов</h3>
-                <p>Мы проанализировали существующих игроков, таких как *Medisafe* и *MySugr*. Несмотря на свою мощь, они часто страдают от «избытка функций» и высоких абонентских платежей. Pilulya же фокусируется на предельном минимализме.</p>
+                <p>Изучены четыре международных приложения (MyTherapy, Medisafe, Mango Health, MedMinder) и два российских («Аптека.ру», «СберЕАптека»).</p>
                 <div class="comparison-table">
                     <table>
                         <thead>
@@ -47,9 +47,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Сложность</td><td>Высокая(неинтуитивная)</td><td>Низкая (интуитивная)</td></tr>
-                            <tr><td>Цена</td><td>На основе подписки</td><td>Фримиум</td></tr>
-                            <tr><td>UI Style</td><td>Перегруженный дизайн</td><td>Минимальный дизайн</td></tr>
+                            <tr><td>Сложность UI/UX</td><td>Высокая (неинтуитивный)</td><td>Низкая (интуитивный)</td></tr>
+                            <tr><td>Цена</td><td>На основе подписки</td><td>Freemium/Premium</td></tr>
+                            <tr><td>Стиль UI/UX</td><td>Перегруженный дизайн</td><td>Минималистичный дизайн (Material 3)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -123,7 +123,7 @@
         <!-- РАЗДЕЛ 2: ЭТАПЫ РАЗРАБОТКИ -->
         <section id="development" class="development-section">
             <div class="section-header">
-                <span class="badge">Этап 02</span>
+                <span class="badge">Второй этап</span>
                 <h2>Жизненный цикл разработки</h2>
             </div>
 
@@ -133,9 +133,7 @@
                     <div class="timeline-content">
                         <h3>Проектирование</h3>
                         <p>Использование Figma для создания высококачественных прототипов интерфейса и схемы взаимодействия в стиле Material 3.</p>
-                        <div class="image-placeholder figma-mockup"><img src="img/figma.png" alt="figma"><div>
-                            
-                        </div>
+                        <div class="image-placeholder figma-mockup"><img src="/site/images/figma1.jpg" alt="figma"></div>
                     </div>
                 </div>
 
@@ -144,9 +142,7 @@
                     <div class="timeline-content">
                         <h3>Архитектура данных</h3>
                         <p>Разработка надежной схемы Room/SQLite для обработки журналов приема лекарств, расписаний и истории действий пользователей в автономном режиме.</p>
-                        <div class="image-placeholder db-schema"><img src="img/db.png" alt="figma"><div></div>
-                            
-                        </div>
+                        <div class="image-placeholder db-schema"><img src="/site/images/db1.jpg" alt="database-schema"></div>
                     </div>
                 </div>
 
@@ -155,9 +151,7 @@
                     <div class="timeline-content">
                         <h3>Активное развитие</h3>
                         <p>Внедрение пользовательского интерфейса Jetpack Compose и WorkManager для обеспечения надежных фоновых уведомлений.</p>
-                        <div class="image-placeholder app-screenshot"><img src="img/screenshots1.png" alt="figma"><div></div>
-                            
-                        </div>
+                        <div class="image-placeholder app-screenshot"><img src="/site/images/screenshots1.jpg" alt="dev-screenshots"></div>
                     </div>
                 </div>
             </div>
@@ -166,7 +160,7 @@
         <!-- РАЗДЕЛ 3: ЭКОНОМИЧЕСКАЯ ЖИЗНЕСПОСОБНОСТЬ -->
         <section id="economic" class="economics-section">
             <div class="section-header">
-                <span class="badge">Этап 03</span>
+                <span class="badge">Третий этап</span>
                 <h2>Экономическая часть</h2>
             </div>
 

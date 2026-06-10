@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Journal | Pilulya</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/site/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,17 +12,17 @@
     <nav class="navbar">
         <div class="logo"><a href="/site/index.html" style="text-decoration: none; color: var(--md-sys-color-primary);">Пилюля</a></div>
         <ul class="nav-links">
-            <li><a href="/index.html">Домой</a></li>
-            <li><a href="/about.html">О Проекте</a></li>
-            <li><a href="/team.html">Команда</a></li>
-            <li><a href="/journal.html" class="active">Дневник Разработки</a></li>
-            <li><a href="/resources.html">Дополнительная Информация</a></li>
+            <li><a href="/site/index.html">Домой</a></li>
+            <li><a href="/site/about.html">О Проекте</a></li>
+            <li><a href="/site/team.html">Команда</a></li>
+            <li><a href="/site/journal.html" class="active">Дневник Разработки</a></li>
+            <li><a href="/site/resources.html">Дополнительная Информация</a></li>
         </ul>
     </nav>
 
-    <header class="about-hero">
-        <h1>Журнал разработки</h1>
-        <p>Хронология нашего инженерного пути и ключевых достижений.</p>
+    <header class="hero">
+        <h1>Дневник разработки</h1>
+        <p>Хронология нашего пути разработчиков и ключевых достижений.</p>
     </header>
 
     <main class="container section">
@@ -30,61 +30,58 @@
 
             <!-- Запись 1 -->
             <article class="journal-post">
-                <div class="post-date">16 Мая, 2026</div>
+                <div class="post-date">&#x1F4CC; 24 мая, 2026</div>
                 <div class="post-content">     
-                    <h2>Анализ рынка и сбор требований</h2>
-                    <p>На первом этапе проведено исследование конкурентов и опрос целевой аудитории, сформирован перечень функциональных требований.</p>
+                    <h2>Релиз MVP Пилюли &#x1F389;</h2>
+                    <p>Сегодня мы собрали MVP нашей Пилюли и уже скоро отправим пояснительную записку по нашему проекту на проверку! Всем спасибо за то, что прошли с нами этот путь! &#x1F607;</p>
                     
                 </div>
             </article>
 
             <!-- Запись 2 -->
             <article class="journal-post">
-                <div class="post-date">20 Мая, 2026</div>
+                <div class="post-date">&#x1F4CC; 22 мая, 2026</div>
                 <div class="post-content">  
-                    <h2>Проектирование интерфейса и базы данных</h2>
-                    <p>На втором этапе (две недели) выполнено проектирование: разработаны макеты экранов в Figma, спроектирована схема базы данных из трёх связанных таблиц (medications, schedule_entries, intake_log), выбрана архитектура single-activity.</p>
+                    <h2>Модуль уведомлений и фоновые задач</h2>
+                    <p>Сегодня мы прикрутили модуль уведомлений: ReminderScheduler с использованием setExactAndAllowWhileIdle, BroadcastReceiver для обработки срабатываний и нажатий на кнопки уведомления, NotificationHelper с двумя каналами уведомлений, BootReceiver для восстановления будильников, StockCheckWorker для периодической проверки остатка препарата. Осталось ещё чуть-чуть &#x1F917;</p>
                     
                 </div>
             </article>
 
             <!-- Запись 3 -->
             <article class="journal-post">
-                <div class="post-date">1 Июня, 2026</div>
+                <div class="post-date">&#x1F4CC; 21 мая, 2026</div>
                 <div class="post-content">
-                    <h2>Разработка слоя данных и репозитория</h2>
-                    <p>На третьем этапе разработан слой данных: Entity-классы Room, три DAO с использованием Flow и suspend-функций, репозиторий MedicationRepository как фасад над DAO. </p>
+                    <h2>Пользовательский интерфейс и навигация</h2>
+                    <p>Создали экраны пользовательского интерфейса на Jetpack Compose, навигацию через NavHost, ViewModel со StateFlow для каждого экрана. &#x1f4c8;</p>
                     
                 </div>
             </article>
 
             <!-- Запись 4 -->
             <article class="journal-post">
-                <div class="post-date">5 Июня, 2026</div>
-                <div class="post-content"> 
-                    <h2>Реализация пользовательского интерфейса и навигации</h2>
-                    <p>На четвёртом этапе (три недели) реализованы экраны пользовательского интерфейса на Jetpack Compose, навигация через NavHost, ViewModel со StateFlow для каждого экрана. </p>
-                    
+                <div class="post-date">&#x1F4CC; 20 мая, 2026</div>
+                <div class="post-content">                    
+                    <h2>База данных и репозиторий</h2>
+                    <p>Разработали entity-классы Room DB, три DAO с использованием Flow и suspend-функций, репозиторий MedicationRepository как фасад над DAO. Было непросто &#x1F97A;</p>                    
                 </div>
             </article>
 
             <!-- Запись 5 -->
             <article class="journal-post">
-                <div class="post-date">11 Июня, 2026</div>
+                <div class="post-date">&#x1F4CC; 18 мая, 2026</div>
                 <div class="post-content">
-                    <h2>Реализация модуля уведомлений и фоновых задач</h2>
-                    <p>На пятом этапе (одна неделя) реализован модуль уведомлений: ReminderScheduler с использованием setExactAndAllowWhileIdle, BroadcastReceiver для обработки срабатываний и нажатий на кнопки уведомления, NotificationHelper с двумя каналами уведомлений, BootReceiver для восстановления будильников, StockCheckWorker для периодической проверки остатка препарата. </p>
-                    
+                    <h2>Интерфейс и база данных</h2>
+                    <p>Сегодня весь день занимались интерфейсом нашего приложения в Figma. Ещё спроектировали схему базы данных из трёх связанных таблиц, выбрали архитектуру single-activity. &#x1f468;&#x200d;&#x1f4bb;</p>
                 </div>
             </article>
 
-            <!-- Запись 5 -->
+            <!-- Запись 6 -->
             <article class="journal-post">
-                <div class="post-date">13 Июня, 2026</div>
+                <div class="post-date">&#x1F4CC; 16 мая, 2026</div>
                 <div class="post-content">
-                    <h2>Тестирование</h2>
-                    <p>На шестом этапе (одна неделя) проведено ручное тестирование на эмуляторах Android API 26, 30, 35  </p>
-                    
+                    <h2>Анализ рынка и сбор требований</h2>
+                    <p>Провели исследование конкурентов и опрос целевой аудитории, сформировали перечень функциональных требований. Что-то будет &#x1F440;</p>
                 </div>
             </article>
         </div>
